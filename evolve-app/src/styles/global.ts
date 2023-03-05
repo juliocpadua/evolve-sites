@@ -9,6 +9,7 @@ export default createGlobalStyle`
 }
 html {
     scroll-behavior: smooth;
+    background-color: #00011A;
 }
 
 :root{

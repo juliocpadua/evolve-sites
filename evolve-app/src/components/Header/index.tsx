@@ -15,7 +15,7 @@ const Header = () => {
           <HiMenuAlt1 color="#ffffff" />
         </div>
         <img src={logoHeader} />
-        <div>
+        <div className="desk__meunu">
           <p>Home</p>
           <section
             onMouseEnter={() => setMenuServices(true)}

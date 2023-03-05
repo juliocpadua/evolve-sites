@@ -1,10 +1,13 @@
 import styled from "styled-components";
 
 export const HeaderConteiner = styled.div`
-  background-color: var(--primary-color);
+  background-color: var(--darkest);
+  -webkit-box-shadow: 1px 2px 28px -2px rgba(110, 45, 255, 1);
+  -moz-box-shadow: 1px 2px 28px -2px rgba(110, 45, 255, 1);
+  box-shadow: 1px 2px 28px -2px rgba(110, 45, 255, 1);
 
-  min-width: 100%;
-  height: 100px;
+  max-width: 93%;
+  height: 95px;
   box-sizing: border-box;
   padding-inline-start: 15px;
 
@@ -12,6 +15,19 @@ export const HeaderConteiner = styled.div`
   justify-content: flex-start;
   align-items: center;
   gap: 15%;
+
+  margin-top: 25px;
+  border-radius: 0px 10px 10px 0px;
+
+  @media (max-width: 400px) {
+    border-radius: 0px 10px 0px 0px;
+  }
+
+  .desk__meunu {
+    @media (max-width: 1024px) {
+      display: none;
+    }
+  }
 
   > div,
   section {
@@ -24,7 +40,7 @@ export const HeaderConteiner = styled.div`
       position: absolute;
       margin-top: 25px;
 
-      background-color: var(--primary-color);
+      background-color: var(--darkest);
       box-sizing: border-box;
       padding: 10px;
       border-radius: 5px;
@@ -41,7 +57,7 @@ export const HeaderConteiner = styled.div`
         :hover {
           border-bottom: 0.5px solid var(--light);
           transition: 0.8s;
-          transform: translate(8px);
+          transform: translateY(1px);
         }
       }
     }
@@ -115,7 +131,7 @@ export const MenuMobile = styled.div`
   flex-direction: column;
 
   min-height: 100vh;
-  min-width: 100vw;
+  width: 93%;
   position: absolute;
 
   background-color: var(--primary-color);
