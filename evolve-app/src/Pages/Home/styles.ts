@@ -2,6 +2,8 @@ import styled from "styled-components";
 
 export const Container = styled.main`
   min-height: 100vh;
+  scroll-behavior: smooth;
+
   background-image: linear-gradient(
     to bottom,
     #00011a,
@@ -19,8 +21,8 @@ export const Container = styled.main`
     box-shadow: 1px 2px 28px -2px rgba(110, 45, 255, 0.4);
 
     float: right;
-    margin-right: 110px;
-    margin-top: -180px;
+    margin-right: 140px;
+    margin-top: -160px;
 
     @keyframes go-back2 {
       0% {
@@ -33,11 +35,12 @@ export const Container = styled.main`
 
     animation: go-back2 4s;
 
-    @media (max-width: 1024px) {
+    @media (max-width: 824px) {
       transition: 2s;
       float: right;
       margin-right: 10px;
       margin-top: 8px;
+      margin-bottom: 25px;
     }
   }
 `;

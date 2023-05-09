@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
-export const HeaderConteiner = styled.div`
-  background-color: var(--darkest);
+export const HeaderConteiner = styled.header`
+  background-color: var(--primary-color);
   -webkit-box-shadow: 1px 2px 28px -2px rgba(110, 45, 255, 1);
   -moz-box-shadow: 1px 2px 28px -2px rgba(110, 45, 255, 1);
   box-shadow: 1px 2px 28px -2px rgba(110, 45, 255, 1);
@@ -54,6 +54,11 @@ export const HeaderConteiner = styled.div`
         font-weight: 500;
         cursor: pointer;
 
+        > a {
+          text-decoration: none;
+          color: var(--light);
+        }
+
         :hover {
           border-bottom: 0.5px solid var(--light);
           transition: 0.8s;
@@ -70,6 +75,10 @@ export const HeaderConteiner = styled.div`
       font-family: var(--font-main);
       font-weight: 500;
       cursor: pointer;
+
+      :hover {
+        font-weight: 600;
+      }
 
       > svg {
         width: 25px;
@@ -127,6 +136,15 @@ export const HeaderConteiner = styled.div`
 `;
 
 export const MenuMobile = styled.div`
+  @keyframes open {
+    0% {
+      transform: translateX(-200px);
+    }
+    100% {
+      transform: translatex(0);
+    }
+  }
+  animation: open 2s;
   display: flex;
   flex-direction: column;
 
@@ -154,6 +172,14 @@ export const MenuMobile = styled.div`
       width: 25px;
       height: 25px;
       cursor: pointer;
+    }
+  }
+
+  > span {
+    margin-left: 15px;
+    > a {
+      text-decoration: none;
+      color: var(--light);
     }
   }
 `;

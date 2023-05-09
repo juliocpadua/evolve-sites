@@ -1,34 +1,42 @@
 import styled from "styled-components";
 
-export const ContainerFirstCard = styled.div`
-  width: 70%;
-  height: 25%;
+export const ContainerSecondCard = styled.div`
+  width: 55%;
+  height: 30vh;
 
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
 
+  background-color: var(--darkest);
+  color: var(--light);
+  opacity: 0.8;
   border: 1px solid var(--darkest);
-  border-radius: 5px;
+  border-radius: 15px;
   -webkit-box-shadow: 1px 2px 28px -2px rgba(110, 45, 255, 0.4);
   -moz-box-shadow: 1px 2px 28px -2px rgba(110, 45, 255, 0.4);
   box-shadow: 1px 2px 28px -2px rgba(110, 45, 255, 0.4);
 
-  margin: 80px;
   padding: 40px;
   gap: 25px;
+  margin-left: 260px;
+  margin-bottom: 15px;
+  margin-top: -40px;
 
-  @keyframes go-back {
+  /* transition: 10s;
+  transform: translate(100px); */
+
+  @keyframes go-back3 {
     0% {
-      transform: translateY(300px);
+      transform: translateX(300px);
     }
     100% {
-      transform: translateY(0);
+      transform: translateX(0);
     }
   }
 
-  animation: go-back 4s;
+  animation: go-back3 4s;
 
   > h4,
   p {
@@ -36,10 +44,12 @@ export const ContainerFirstCard = styled.div`
     font-family: var(--font-main);
     color: var(--light);
     font-size: 20px;
+    opacity: 1;
   }
 
   > p {
     font-weight: 500;
+    opacity: 1;
   }
 
   @media (max-width: 1024px) {
