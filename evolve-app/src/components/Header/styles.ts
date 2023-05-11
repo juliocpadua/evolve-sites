@@ -14,13 +14,14 @@ export const HeaderConteiner = styled.header`
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 15%;
+  gap: 45%;
 
   margin-top: 25px;
   border-radius: 0px 10px 10px 0px;
 
-  @media (max-width: 400px) {
+  @media (max-width: 824px) {
     border-radius: 0px 10px 0px 0px;
+    gap: 20%;
   }
 
   .desk__meunu {
@@ -180,6 +181,8 @@ export const MenuMobile = styled.div`
     > a {
       text-decoration: none;
       color: var(--light);
+      font-family: var(--font-main);
+      font-weight: 500;
     }
   }
 `;

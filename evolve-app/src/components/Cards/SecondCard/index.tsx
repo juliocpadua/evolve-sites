@@ -3,12 +3,9 @@ import { ContainerSecondCard } from "./styles";
 export const SecondCard = () => {
   return (
     <ContainerSecondCard>
-      <h4>Segundo Card Título</h4>
+      <h4>Projeto transparente</h4>
       <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s, when an unknown printer took a galley of type and
-        scrambled it to make a type specimen book.
+        Do início ao fim o nosso intuito é atender às exigências do seu negócio, com um processo de projeto 100% transparente e personalizado para as suas necessidades, tornando a sua experiência mais clara e ágil.
       </p>
     </ContainerSecondCard>
   );

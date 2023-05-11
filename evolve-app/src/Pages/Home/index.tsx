@@ -11,9 +11,11 @@ export const Home = () => {
   return (
     <Container>
       <Header home={true} />
+
       <FirstCard />
       <img src={mobile1} alt="Banner um" className="banner-one" />
       <SecondCard />
+
       <ListProducts />
       <ListServices />
       <Footer />

@@ -13,11 +13,8 @@ export const BudgetPage = ({}) => {
   const { type } = useParams();
 
   const sendEmail = (data: any) => {
-    // toast.success("Solicitação enviada com sucesso!");
-    api
-      .get(`/send/${data.name}/${data.email}/${data.phone}/${type}`)
-      .then((res) => toast.success("Solicitação enviada com sucesso!"))
-      .catch((err) => toast.error("Falha na solicitação!"));
+    toast.success("Solicitação enviada com sucesso!");
+    api.get(`/send/${data.name}/${data.email}/${data.phone}/${type}`);
   };
   return (
     <>

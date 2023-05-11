@@ -7,6 +7,10 @@ export const ContainerBudget = styled.main`
 
   min-height: 85vh;
 
+  @media (max-width: 824px) {
+    flex-direction: column;
+  }
+
   > form {
     -webkit-box-shadow: 0px 0px 13px -9px rgba(85, 85, 85, 1);
     -moz-box-shadow: 0px 0px 13px -9px rgba(85, 85, 85, 1);
@@ -118,6 +122,17 @@ export const ContainerBudget = styled.main`
       color: var(--light);
 
       opacity: 0.3;
+    }
+
+    @media (max-width: 824px) {
+      flex-direction: row;
+      height: 100px;
+      gap: 40px;
+
+      > div {
+        width: 50px;
+        height: 1px;
+      }
     }
   }
 

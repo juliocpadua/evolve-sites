@@ -53,30 +53,35 @@ const Header = ({ home }: IPropsHeader) => {
       </HeaderConteiner>
       {openMenu && (
         <MenuMobile>
-          <p>Início</p>
-          <p onClick={() => setOpenSubMenuServices(!openSubMenuServices)}>
-            Serviços <MdOutlineKeyboardArrowDown />
-          </p>
-          {openSubMenuServices && (
+          <p onClick={() => navigate("/")}>Home</p>
+          {home && (
             <>
-              <span
-                onClick={() => {
-                  setOpenSubMenuServices(!openSubMenuServices);
-                  setOpenMenu(!openMenu);
-                }}
-              >
-                <a href="#c1">- Sites completos</a>
-              </span>
-              <span
-                onClick={() => {
-                  setOpenSubMenuServices(!openSubMenuServices);
-                  setOpenMenu(!openMenu);
-                }}
-              >
-                <a href="#c2">- Participação em projetos</a>
-              </span>
+              <p onClick={() => setOpenSubMenuServices(!openSubMenuServices)}>
+                Serviços <MdOutlineKeyboardArrowDown />
+              </p>
+              {openSubMenuServices && (
+                <>
+                  <span
+                    onClick={() => {
+                      setOpenSubMenuServices(!openSubMenuServices);
+                      setOpenMenu(!openMenu);
+                    }}
+                  >
+                    <a href="#c1">Sites completos</a>
+                  </span>
+                  <span
+                    onClick={() => {
+                      setOpenSubMenuServices(!openSubMenuServices);
+                      setOpenMenu(!openMenu);
+                    }}
+                  >
+                    <a href="#c2">Participação em projetos</a>
+                  </span>
+                </>
+              )}
             </>
           )}
+
           <p>FAQ</p>
           <p>Contato</p>
           <p>Sobre nós</p>

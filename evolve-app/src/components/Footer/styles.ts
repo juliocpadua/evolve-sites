@@ -19,8 +19,8 @@ export const ContainerFooter = styled.footer`
     align-items: center;
 
     > img {
-      width: 290px;
-      height: 200px;
+      width: 100%;
+      height: 220px;
     }
 
     > p {

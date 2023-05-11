@@ -24,6 +24,13 @@ export const Container = styled.main`
     margin-right: 140px;
     margin-top: -160px;
 
+    @media (max-width: 824px) {
+      float: none;
+      margin-right: 50px;
+      margin-top: -160px;;
+      margin-left: -40px;
+    }
+
     @keyframes go-back2 {
       0% {
         transform: translateY(-550px);
