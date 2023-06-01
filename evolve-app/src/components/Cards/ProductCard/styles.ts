@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
 export const ContainerProduct = styled.div`
-  width: 300px;
-  height: 350px;
+  width: 310px;
+  min-height: 360px;
+  height: auto;
 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
 
   gap: 15px;
   padding: 10px;

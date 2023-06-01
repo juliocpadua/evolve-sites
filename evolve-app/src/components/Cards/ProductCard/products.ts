@@ -7,20 +7,20 @@ export interface IProductsProps {
 export const Products: IProductsProps[] = [
   {
     id: "1",
-    title: "Landing Page",
+    title: "E-commerce",
     description:
-      "Representa uma página web que fica responsável por fazer a captura de usuários, potenciais clientes e consumidores, através de dados pessoais como nome completo, e-mail, whatsapp. Com esse tipo de informação torna-se possível entrar em contato para uma oferta personalizada.",
+      "Representa um site completo de vendas, com página inicial personalizada, exibição de coleções em destaque, página geral de produtos, página especial do produto selecionado, carrinho, checkout e muito mais. Além disso contém um Dashboard completo para você analisar suas vendas e manipular seus produtos e os dados de seus clientes. Conta com assistência educativa para o domínio total das ferramentas disponíveis.",
   },
   {
     id: "2",
-    title: "E-commerce",
+    title: "Landing Page",
     description:
-      "Representa um site completo de vendas, com página inicial personalizada, exibição de coleções em destaque, página geral de produtos, página especial do produto selecionado, carrinho, checkout e muito mais. Além disso contém um Dashboard completo para você analisar suas vendas e manipular seus produtos e os dados de seus clientes.",
+      "Uma Landing Page, também conhecida como página de destino, é uma página da web projetada especificamente para converter visitantes em leads ou clientes potenciais. É uma página única, geralmente desvinculada do site principal, criada com um objetivo específico em mente, como promover um produto, oferecer um conteúdo especial, capturar informações de contato ou incentivar uma ação específica.",
   },
   {
     id: "3",
-    title: "Business Page",
+    title: "Site Institucional",
     description:
-      "Representa uma página web que vai levar seu negócio até os resultados de busca dos usuários na Internet. Consiste em uma única página, onde você pode apresentar o seu negócio e deixar opções de contato para os interessados em seus serviços. Nesse caso as vendas e fechamentos de contrato ocorrem fora da plataforma, bem como a comunicação entre as partes.",
+      "Um site institucional costuma conter páginas que descrevem a história e os antecedentes da organização, sua equipe, informações de contato, notícias e eventos recentes, além de detalhes sobre seus produtos ou serviços. Ele pode incluir elementos visuais como logotipos, imagens de destaque, vídeos e gráficos para transmitir sua identidade visual e atrair a atenção dos visitantes.",
   },
 ];

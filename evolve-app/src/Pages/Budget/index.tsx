@@ -75,7 +75,10 @@ export const BudgetPage = ({}) => {
         <section className="contact">
           <h2>Entre em contato conosco</h2>~
           <div className="icons">
-            <a target="blank" href="https://www.instagram.com/evolve.sites/">
+            <a
+              target="blank"
+              href="https://instagram.com/evolve.sites?igshid=MzRlODBiNWFlZA=="
+            >
               <AiOutlineInstagram />
             </a>
 

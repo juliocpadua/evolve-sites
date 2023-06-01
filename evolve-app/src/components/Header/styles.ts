@@ -14,7 +14,7 @@ export const HeaderConteiner = styled.header`
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 45%;
+  gap: 50%;
 
   margin-top: 25px;
   border-radius: 0px 10px 10px 0px;
@@ -41,7 +41,7 @@ export const HeaderConteiner = styled.header`
       position: absolute;
       margin-top: 25px;
 
-      background-color: var(--darkest);
+      background-color: var(--primary-color);
       box-sizing: border-box;
       padding: 10px;
       border-radius: 5px;
@@ -61,9 +61,10 @@ export const HeaderConteiner = styled.header`
         }
 
         :hover {
-          border-bottom: 0.5px solid var(--light);
+          font-weight: bold;
+          /* border-bottom: 0.5px solid var(--light);
           transition: 0.8s;
-          transform: translateY(1px);
+          transform: translateY(1px); */
         }
       }
     }

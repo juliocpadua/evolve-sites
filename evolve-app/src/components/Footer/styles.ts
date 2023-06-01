@@ -5,41 +5,43 @@ export const ContainerFooter = styled.footer`
   background-color: var(--primary-color);
 
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
   justify-content: space-between;
 
   box-sizing: border-box;
   padding: 20px;
   margin-top: 50px;
 
-  > section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  > img {
+    width: 300px;
+    height: 200px;
 
-    > img {
-      width: 100%;
-      height: 220px;
+    @media (max-width: 824px) {
+      height: 200px;
     }
+  }
 
-    > p {
-      font-weight: 300;
-      font-family: var(--font-main);
-      color: var(--light);
-      font-size: 14px;
-      opacity: 0.7;
+  > p {
+    font-weight: 300;
+    font-family: var(--font-main);
+    color: var(--light);
+    font-size: 14px;
+    opacity: 0.7;
 
-      max-width: 500px;
+    max-width: 500px;
 
-      margin-top: 25px;
-      margin-left: 40px;
-    }
+    margin-top: 25px;
+    margin-left: 40px;
   }
 
   > a {
     text-decoration: none;
     margin-top: -40px;
+
+    /* @media (max-width: 824px) {
+      margin-top: -90px;
+    } */
 
     :hover {
       > p {

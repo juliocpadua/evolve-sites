@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const ContainerSecondCard = styled.div`
   width: 55%;
-  height: 30vh;
+  height: 25%;
 
   display: flex;
   flex-direction: column;
@@ -20,7 +20,7 @@ export const ContainerSecondCard = styled.div`
 
   padding: 40px;
   gap: 25px;
-  margin-left: 260px;
+  margin-left: 230px;
   margin-bottom: 15px;
   margin-top: -40px;
 

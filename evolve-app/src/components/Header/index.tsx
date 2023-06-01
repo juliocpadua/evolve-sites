@@ -46,9 +46,9 @@ const Header = ({ home }: IPropsHeader) => {
             </section>
           )}
 
-          <p>FAQ</p>
-          <p>Contato</p>
-          <p>Sobre nós</p>
+          {/* <p>FAQ</p> */}
+          <p onClick={() => navigate("/orçamento/E-commerce")}>Contato</p>
+          <p onClick={() => navigate("/aboutus")}>Sobre nós</p>
         </div>
       </HeaderConteiner>
       {openMenu && (
@@ -82,9 +82,9 @@ const Header = ({ home }: IPropsHeader) => {
             </>
           )}
 
-          <p>FAQ</p>
-          <p>Contato</p>
-          <p>Sobre nós</p>
+          {/* <p>FAQ</p> */}
+          <p onClick={() => navigate("/orçamento/E-commerce")}>Contato</p>
+          <p onClick={() => navigate("/aboutus")}>Sobre nós</p>
         </MenuMobile>
       )}
     </>
