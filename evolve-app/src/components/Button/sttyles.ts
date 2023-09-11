@@ -25,14 +25,15 @@ export const ButtonStyle = styled.button`
   &&:hover {
     transition: 1s;
     background-color: rgba(0.7, 0.7, 0.7, 0.4);
-    border: 0.3px solid rgba(0.7, 0.7, 0.7, 0.4);
+    border: 0.3px solid var(--light);
     letter-spacing: 2px;
+    // rgba(0.7, 0.7, 0.7, 0.4)
   }
 
   &&:focus {
     transition: 400ms;
     background-color: rgba(0.7, 0.7, 0.7, 0.4);
-    border: 0.3px solid rgba(0.7, 0.7, 0.7, 0.4);
+    border: 0.3px solid var(--light);
     letter-spacing: 2px;
   }
 `;

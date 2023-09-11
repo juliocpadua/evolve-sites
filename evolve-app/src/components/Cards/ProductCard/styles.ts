@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ContainerProduct = styled.div`
-  width: 310px;
+  width: 305px;
   min-height: 360px;
   height: auto;
 
@@ -10,13 +10,20 @@ export const ContainerProduct = styled.div`
   justify-content: space-between;
 
   gap: 15px;
-  padding: 10px;
+  padding: 15px;
 
-  border: 1px solid var(--darkest);
-  border-radius: 5px;
-  -webkit-box-shadow: 1px 2px 28px -2px rgba(110, 45, 255, 0.4);
-  -moz-box-shadow: 1px 2px 28px -2px rgba(110, 45, 255, 0.4);
-  box-shadow: 1px 2px 28px -2px rgba(110, 45, 255, 0.4);
+  &&:hover {
+    /* border: 1px solid var(--darkest); */
+
+    -webkit-box-shadow: 1px 2px 28px -2px rgba(110, 45, 255, 0.4);
+    -moz-box-shadow: 1px 2px 28px -2px rgba(110, 45, 255, 0.4);
+    box-shadow: 1px 2px 28px -2px rgba(110, 45, 255, 0.4);
+
+    transition: 0.8s;
+  }
+
+  background-color: var(--primary-color);
+  border-radius: 15px;
 
   color: var(--light);
 

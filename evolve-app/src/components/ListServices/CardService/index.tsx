@@ -55,7 +55,7 @@ export const CardService = () => {
         <p>Valor médio da hora trabalhada</p>
         <div>
           <p>R$</p>
-          {isOpen ? <span>22,90</span> : <span>-----</span>}
+          {isOpen ? <span>50,00</span> : <span>-----</span>}
 
           <BsEyeSlashFill onClick={() => setIsOpen(!isOpen)} />
         </div>
